@@ -12,21 +12,21 @@ $email = mysqli_real_escape_string($mysqli,$_POST['email']);
 $gender = $_POST['gender'];
 $pass1 = md5($pass1);
 
-if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email_check']) && $_POST['email_check'] == 1) {
+// if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email_check']) && $_POST['email_check'] == 1) {
 
-	// validate email
+// 	// validate email
 
 	
 
-	$sqlcheck = "SELECT email FROM users WHERE email = '$email' ";
+// 	$sqlcheck = "SELECT email FROM users WHERE email = '$email' ";
 
-	$checkResult = $mysqli->query($sqlcheck);
+// 	$checkResult = $mysqli->query($sqlcheck);
 
-	// check if email already taken
-	if(mysqli_num_rows($checkResult) > 0) {
-		header("HTTP/1.1 500 Internal Server Error");
-	}
-}
+// 	// check if email already taken
+// 	if(mysqli_num_rows($checkResult) > 0) {
+// 		header("HTTP/1.1 500 Internal Server Error");
+// 	}
+// }
 
 
  $sql ="INSERT INTO `users`(`name`,`surname`,`nickname`,`password`,`age`,`email`,`id`,`gender`) VALUES ('$name','$surname','$nickname','$pass1',$age,'$email','','$gender')";
