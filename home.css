@@ -1,0 +1,232 @@
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 106px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+#cardimg {
+    padding: 5px;
+    width: 100%;
+}
+
+.comment-wrapper .panel-body {
+    max-height: auto;
+    overflow: auto;
+}
+
+.comment-wrapper .media-list .media img {
+    width: 64px;
+    height: 64px;
+    border: 2px solid #e5e7e8;
+}
+
+.comment-wrapper .media-list .media {
+    border-bottom: 1px dashed #efefef;
+    margin-bottom: 25px;
+}
+
+#nickname {
+    margin-left: 10px;
+    display: flex;
+    max-height: 40px;
+    justify-content: center;
+}
+
+#comment {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#info {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#comment-card {
+    margin: 5px;
+    padding: 5px;
+}
+
+#divimg {
+    display: flex;
+    justify-content: center;
+    max-height: 70px;
+}
+
+#logo {
+    height: 70px;
+    width: 70px;
+}
+
+#img {
+    max-height: 70px;
+}
+
+#sidenav {
+    border-right: solid gray;
+    border-width: 1px;
+}
+
+.header-text {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    color: black;
+    font-size: 30px;
+    border-bottom: double gray;
+}
+
+#headerside-nav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 30px;
+    border-bottom: double gray;
+}
+
+.header {
+    padding-bottom: 5px;
+    border-bottom: black 1px solid;
+}
+
+@media screen and (max-width: 1366px) {
+    #logo {
+        height: 50px;
+        width: 50px;
+    }
+    #img {
+        max-height: 50px;
+    }
+    #divimg {
+        max-height: 50px;
+    }
+    .card-container {
+        width: 260px;
+        margin-right: 0.5rem;
+    }
+}
+
+.nav-side-menu {
+    overflow: auto;
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+    background-color: white;
+    color: black;
+    border-radius: 9px;
+    text-align: center;
+    margin-top: 4.2rem;
+}
+
+.nav-side-menu .brand {
+    background-color: #408ca3;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.nav-side-menu ul,
+.nav-side-menu li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    /*    
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
+            }
+     }
+*/
+}
+
+.nav-side-menu ul .arrow:before,
+.nav-side-menu li .arrow:before {
+    font-family: FontAwesome;
+    content: "\f078";
+    display: inline-block;
+    padding-right: 20px;
+    font-size: .9rem;
+}
+
+.arrow {
+    position: absolute;
+    right: 0;
+}
+
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+    background-color: white;
+    border: none;
+    line-height: 28px;
+    border-bottom: 1px solid #23282e;
+    transition: 0.3s;
+}
+
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+    border-left: #408ca3 10px solid;
+}
+
+.nav-side-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-side-menu li:hover {
+    background-color: #408ca3;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 767px) {
+    .nav-side-menu {
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 767px) {
+    .nav-side-menu .menu-list .menu-content {
+        display: block;
+    }
+}
+
+.nav-side-menu .sub-menu li a {
+    text-decoration: none;
+    color: #e1ffff;
+}
+
+.sub-menu {
+    transition: 0.3s;
+}
+
+.nav-side-menu li .sub-menu li:hover {
+    border-left: 3px solid #4278b6;
+    background-color: #408ca3;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}

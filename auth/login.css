@@ -1,0 +1,35 @@
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 106px;
+}
+
+#container {
+    padding-top: 50px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.card {
+    height: 100%;
+}
+
+#logo {
+    height: 70px;
+    width: 70px;
+}
+
+#imgnav {
+    height: 70px;
+}
+
+#divimg {
+    display: flex;
+    justify-content: center;
+    max-height: 70px;
+}
