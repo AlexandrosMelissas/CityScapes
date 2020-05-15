@@ -1,5 +1,5 @@
 <?php 
-require 'db/dbconnect.php';
+require '../db/dbconnect.php';
 header('Content-type: application/json');
 
 $search = mysqli_real_escape_string($mysqli,$_GET['search']);

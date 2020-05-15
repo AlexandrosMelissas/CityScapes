@@ -1,5 +1,5 @@
 <?php 
-require 'db/dbconnect.php';
+require '../db/dbconnect.php';
 
 $comment_id = $_GET['comment_id'];
 $city_id = $_GET['city_id'];

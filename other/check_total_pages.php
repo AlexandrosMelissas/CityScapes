@@ -1,5 +1,5 @@
 <?php 
-require 'db/dbconnect.php';
+require '../db/dbconnect.php';
 session_start();
 if(isset($_GET['city_id'])){
 

@@ -168,9 +168,10 @@ $(document).ready(function(){
 $(document).ready(function() {
     let button_like = document.querySelector('#button-like');
     var path = window.location.hash.substr(13);
+    console.log(path)
 
     $.ajax({
-        url: "like/check_like.php",
+        url: "../like/check_like.php",
         type: "GET",
         data: { id: path },
         dataType: 'json',

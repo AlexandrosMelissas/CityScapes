@@ -1,5 +1,5 @@
 <?php 
-include 'db/dbconnect.php';
+include '../db/dbconnect.php';
 session_start();
 
 $value = $_POST['value'];

@@ -1,5 +1,5 @@
 <?php 
-include 'db/dbconnect.php';
+include '../db/dbconnect.php';
 header('Content-type: application/json');
 
 $id = $_GET['id'];

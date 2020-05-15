@@ -91,9 +91,7 @@ $('#btnRegister').on('click', function() {
     }else{
         gender = document.querySelector("#female").value;
     }
-     
-    console.log(gender)
-    
+         
     //New Confirm Password
 
     if (pass1 != pass2) {

@@ -1,5 +1,5 @@
 <?php 
-require 'db/dbconnect.php';
+require '../db/dbconnect.php';
 require 'php-mailer/class.phpmailer.php';
 require 'php-mailer/class.smtp.php';
 require 'php-mailer/PHPMailerAutoload.php';

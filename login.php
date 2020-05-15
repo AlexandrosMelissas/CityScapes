@@ -21,7 +21,7 @@
             <div class="form-group">
               <label for="exampleInputPassword1">Κωδικός</label>
               <input name="password" id="password" type="password" class="form-control" placeholder="Κωδικός πρόσβασης">
-              <small style="display:none" class="error text-danger mt-2">Παρακαλώ ελέγξτε τα στοιχεία σας και προσπαθήστε ξανά.</small>
+              <small style="display:none" class="error error-password text-danger mt-2">Παρακαλώ ελέγξτε τα στοιχεία σας και προσπαθήστε ξανά.</small>
               <small class="form-text text-muted mt-2">
                 Δεν έχετε λογαριασμό? <a class="text-info" href="#register.php">Εγγραφτείτε τώρα δωρεάν!</a>
               </small>
