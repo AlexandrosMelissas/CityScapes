@@ -1,11 +1,16 @@
 <?php 
 
 $host = 'localhost';
-$db = 'db_table';
+$db = 'city_scapes_db';
 $user = 'root';
-$pass = '';
+$pass = 'root';
 
 
+if(gethostname()=='users.iee.ihu.gr') {
+    $mysqli = new mysqli($host, $user, $pass, $db, null, 'home/student/it/2015/it154582/mysql/run/mysql.sock')
+} else {
+    $mysqli = new mysqli($host,$user,$pass,$db);
+}
 
-$mysqli = new mysqli($host,$user,$pass,$db);
+
 ?>
