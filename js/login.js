@@ -12,7 +12,7 @@ $('#form').submit(function(event) {
         url: "auth/dologin.php",
         data: { nickname: nickname.value, password: password.value },
         success: function() {
-            window.location.replace('home.php');
+            window.location.url('home.php');
         },
         error: function() {
             nickname.className = 'form-control is-invalid';
